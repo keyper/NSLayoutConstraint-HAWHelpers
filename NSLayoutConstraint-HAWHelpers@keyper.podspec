@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://EXAMPLE/NSLayoutConstraint-HAWHelpers"
 
 
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   s.author       = { "James Paolantonio" => "james@howaboutwe.com" }
 
@@ -20,5 +20,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/keyper/NSLayoutConstraint-HAWHelpers.git", :branch => 'master', :tag => s.version }
 
   s.source_files = 'Classes', '*.{h,m}'
+
+  s.requires_arc = true
 
 end
